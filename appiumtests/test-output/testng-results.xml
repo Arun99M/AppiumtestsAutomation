@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-03T06:12:02Z" name="Default suite" finished-at="2024-01-03T06:12:49Z" duration-ms="46296">
+  <suite started-at="2024-01-04T09:48:11Z" name="Default suite" finished-at="2024-01-04T09:48:32Z" duration-ms="20994">
     <groups>
     </groups>
-    <test started-at="2024-01-03T06:12:02Z" name="Default test" finished-at="2024-01-03T06:12:49Z" duration-ms="46296">
-      <class name="Appiumaruntesting.eCommerce_tc_2">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:Appiumaruntesting.eCommerce_tc_2@4d1c005e]" started-at="2024-01-03T06:12:03Z" name="ConfigureAppium" finished-at="2024-01-03T06:12:15Z" duration-ms="12739" status="PASS">
+    <test started-at="2024-01-04T09:48:11Z" name="Default test" finished-at="2024-01-04T09:48:32Z" duration-ms="20994">
+      <class name="Appiumaruntesting.MobileBrowserTest">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:Appiumaruntesting.MobileBrowserTest@6c284af]" started-at="2024-01-04T09:48:11Z" name="ConfigureAppium" finished-at="2024-01-04T09:48:21Z" duration-ms="10024" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="FillForm()[pri:0, instance:Appiumaruntesting.eCommerce_tc_2@4d1c005e]" started-at="2024-01-03T06:12:15Z" name="FillForm" finished-at="2024-01-03T06:12:48Z" duration-ms="32676" status="PASS">
+        <test-method signature="broswertest()[pri:0, instance:Appiumaruntesting.MobileBrowserTest@6c284af]" started-at="2024-01-04T09:48:21Z" name="broswertest" finished-at="2024-01-04T09:48:31Z" duration-ms="10184" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FillForm -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Appiumaruntesting.eCommerce_tc_2@4d1c005e]" started-at="2024-01-03T06:12:48Z" name="tearDown" finished-at="2024-01-03T06:12:49Z" duration-ms="821" status="PASS">
+        </test-method> <!-- broswertest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Appiumaruntesting.MobileBrowserTest@6c284af]" started-at="2024-01-04T09:48:31Z" name="tearDown" finished-at="2024-01-04T09:48:32Z" duration-ms="755" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Appiumaruntesting.eCommerce_tc_2 -->
+      </class> <!-- Appiumaruntesting.MobileBrowserTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

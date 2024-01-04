@@ -19,7 +19,7 @@ import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
-public class BaseTest {
+public class BrowserBaseTest {
 	
 	public AndroidDriver driver;
 	public AppiumDriverLocalService service;
@@ -35,41 +35,14 @@ public class BaseTest {
 				UiAutomator2Options options = new UiAutomator2Options();  //class
 				options.setDeviceName("samsung SM-F127G");
 				options.setChromedriverExecutable("C:\\Automation Tool\\Drivers\\ChromeDriver\\chromedriver-win64\\chromedriver.exe");
-				//options.setApp("C:\Users\ArunkumarM\git\repository\appiumtests\src\test\java\resources\ApiDemos-debug.apk");
-				options.setApp("C:\\Users\\ArunkumarM\\git\\repository\\appiumtests\\src\\test\\java\\resources\\General-Store.apk");
+				options.setCapability("browserName","Chrome");
 				
 				driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 				
 	}
 	
-	public void longPressAction(WebElement ele)
-	{
-		
-		((JavascriptExecutor)driver).executeScript("mobile: longClickGesture", ImmutableMap.of("elementId",
-				((RemoteWebElement)ele).getId(),"duration",2000));
-	}
-	public void scrollToEndAction()
-	{
-		boolean canScrollMore;
-		do 
-		{
-		 canScrollMore = (Boolean) ((JavascriptExecutor) driver).executeScript("mobile: scrollGesture", ImmutableMap.of(
-			    "left", 100, "top", 100, "width", 200, "height", 200,
-			    "direction", "down",
-			    "percent", 3.0
-			));
-		}while(canScrollMore);
-	}
 	
-	public void swipeAction(WebElement ele,String direction)
-	{
-		((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of(
-				   "elementId",((RemoteWebElement)ele).getId(),
-				    "direction", "direction",
-				    "percent", 0.75
-				));
-	}
 	
 	public Double getFormattedAmount(String amount)
 	{
